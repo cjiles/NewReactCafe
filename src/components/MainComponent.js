@@ -1,8 +1,10 @@
+  
 import React, { Component } from 'react';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent'
 import Menu from './MenuComponent';
-import Product from './ProductsComponent';
+import Products from './ProductsComponent';
+import HomeComponent from './HomeComponent';
 import { CAFEITEMS } from '../shared/cafeitems';
 import MenuItems from './MenuItemsComponent';
 import { MENU } from '../shared/MenuItems';
@@ -13,7 +15,8 @@ class Main extends Component{
     constructor(props) {
         super(props);
         this.state = {
-            menus: MENU
+            menus: MENU,
+            cafeitems: CAFEITEMS
         };
     }
 
@@ -29,9 +32,10 @@ class Main extends Component{
             <div>
                 <Header />
                 <Switch>
+                <Route exact path='/home' component={HomeComponent} />
                     <Route exact path='/menu'  render={() => <Menu menu={this.state.menus} />}></Route>
                     <Route path='/menu/:menuItemId' component={MenuItemWithId} />
-           
+                    <Route exact path='/products' render={() => <Products cafeitems={this.state.cafeitems}  />} />  
                 </Switch>
                 <Footer />
             </div>
