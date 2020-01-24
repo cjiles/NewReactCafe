@@ -1,10 +1,10 @@
 export const MENU = [
     {
        id: 0,
-        name:'COFFEE',
+        name:'Coffee',
         image: "/assets/images/Coffee.jpg",
         altimage: "Photo by Nathan Dumlao on Unsplash",
-        description: "Your choice of  our special blends of coffee",
+        description: "Choice of special blends of coffee",
         items: [
             {
                 menuid: 0, 
@@ -46,7 +46,7 @@ export const MENU = [
     },   
     {
         id: 1,
-        name: 'DRINKS',
+        name: 'Drinks',
         image: "/assets/images/tea.jpg",
         altimage: "Photo by Food Photographer | Jennifer Pallian on Unsplash",
         description: "Please enjoy our speciality drinks",
@@ -79,10 +79,10 @@ export const MENU = [
     },
     {
         id: 2,
-        name:'BREAKFAST SANDWICHES',
+        name:'Breakfast Sandwiches',
         image: "/assets/images/Breakfastsandwich.jpg",
         altimage:"Photo by Duncan Kidd on Unsplash",
-        description: "Served with your choice of fresh fruit or hashbrown",
+        description: "Served with fresh fruit or hashbrown",
         items: [
             {
                 menuid: 0, 
@@ -106,7 +106,7 @@ export const MENU = [
     },
     {
         id: 3,
-        name:'BAGELS',
+        name:'Bagels',
         image: "/assets/images/Bagels.jpg",
         altimage: "",
         description: "Served with fresh fruit",
@@ -139,10 +139,10 @@ export const MENU = [
     },
     {
         id: 4,
-        name:'LUNCH SANDWICHES',
+        name:'Lunch Sandwiches',
         image: "/assets/images/LunchSandwich.jpg",
         altimage: "Photo by Eiliv-Sonas Aceron on Unsplash",
-        description: "Served with your choice of chips or soup of the day",
+        description: "Served with chips or soup of the day",
         items: [
             {
                 menuid: 0, 
@@ -172,10 +172,10 @@ export const MENU = [
     },
     {
         id: 5,
-        name:'SALADS',
+        name:'Salads',
         image: "/assets/images/Salad.jpg",
         altimage: "Photo by Katka Pavlickova on Unsplash",
-        description: "Served with your choice of salad dressing",
+        description: "Served with your choice of dressing",
         items: [
             {
                 menuid: 0, 

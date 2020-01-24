@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #F3F2F4 ;
 }
 
 .App-logo {
@@ -35,4 +36,62 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.card {
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom:10px;
+
+}
+
+ h1, h2, h3, h4, .card-title, .card-header {
+  font-family: "Lobster", cursive;
+} 
+
+.jumbotron{
+  height: 200px;
+  padding:0px;
+  background-color: #98977C ;
+  color: #294452;
+ }
+
+.navbar, .site-footer{
+  background-color: #727B82
+}
+
+.site-footer a{
+  color: #F3F2F4
+}
+
+.btn-social-icon{
+  background-color:  #294452;
+}
+
+.jumbotron h1{
+  font-size: 10vh;
+  
+}
+
+.navbar h2{
+  text-align:left;
+}
+
+.carousel p{
+  color: #F3F2F4;
+}
+
+h1, h2, h3{
+  color: #294452;
+  font-weight: bolder;
+}
+
+.card-header, .card-title{
+  color: #294452;
+  background-color: #98977C;
+}
+
+.media-heading{
+  background-color: #98977C;
 }

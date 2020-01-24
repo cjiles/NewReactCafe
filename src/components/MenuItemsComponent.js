@@ -1,6 +1,6 @@
 import React from 'react';
-import { Breadcrumb, BreadcrumbItem, Media } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Media } from 'reactstrap';
+
 
 
 function RenderMenu({menu}){
@@ -9,9 +9,9 @@ function RenderMenu({menu}){
              <Media object className="col-8 col-md-4 ml-5" src={menu.image} alt={menu.altimage} width="300px" height="400px"/>
                <Media body className="col-8 col-md-6 ml-5 mb-4">
                     <Media heading >
-                        {menu.name}
+                       <h3>{menu.name}</h3>
+                       <p>{menu.description}</p>
                     </Media>
-                    {menu.description}
                     <br />                
                  <RenderItems items={menu.items}></RenderItems>
               </Media>
@@ -45,16 +45,7 @@ function MenuItems(props) {
            props.menu.map(menu =>{
                     return(
                         <div className="container" key={menu.id}>
-                            <div className="row">
-                                <div className="col">
-                                    <Breadcrumb>
-                                        <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                                        <BreadcrumbItem><Link to="/menu">Menu</Link></BreadcrumbItem>
-                                        <BreadcrumbItem active>{menu.name}</BreadcrumbItem>
-                                    </Breadcrumb>
-                                </div>
-                            </div>
-                            <div className="row"> 
+                            <div className="row mt-5"> 
                                 <RenderMenu menu = {menu}  />
                         </div>
                     </div>
