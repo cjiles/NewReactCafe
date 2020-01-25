@@ -19,7 +19,7 @@ class Home extends Component {
 				return(
 					<div className="row">
 						{location.map(location => {
-						return(<div key={location.id} className="m-4">
+						return(<div key={location.id} className="m-1 m-md-4">
 							<Card>
 								<CardHeader>
 									<h4>{location.name}</h4>
